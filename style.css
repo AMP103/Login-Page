@@ -2,7 +2,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.glass-effect {
+.class-effect {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -10,4 +10,30 @@ body {
 
 .hidden {
     display: none;
+}
+
+.auth-toggle {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    color: #555;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.auth-tab.active {
+    background: #f0f0f0;
+    color: #000;
+    font-weight: 600;
 }
