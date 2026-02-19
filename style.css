@@ -12,28 +12,23 @@ body {
     display: none;
 }
 
-.auth-toggle {
-    display: flex;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 200px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
-
-.auth-tab {
-    flex: 1;
-    padding: 10px 20px;
-    text-align: center;
+/* Additional styles for the toggle tabs to ensure consistent active state styling */
+.toggle-tab {
     cursor: pointer;
-    background: white;
-    color: #555;
-    border: none;
-    transition: background 0.3s, color 0.3s;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.auth-tab.active {
-    background: #f0f0f0;
-    color: #000;
-    font-weight: 600;
+.toggle-tab.active {
+    background: rgba(255, 255, 255, 0.2); /* Use same filled/light background as Login active tab */
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.toggle-tab:not(.active) {
+    background: transparent;
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
 }
