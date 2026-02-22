@@ -4,30 +4,21 @@ body {
     padding: 0;
 }
 
-.glass-effect {
+.class-effect {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.class-effect.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .hidden {
     display: none;
-}
-
-/* Added styles for active tab styling */
-.tab {
-    padding: 10px 20px;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease, color 0.3s ease;
-}
-
-.tab-active {
-    border-bottom-color: #3182ce; /* Blue underline to indicate active tab */
-    color: #3182ce; /* Blue text for active tab */
-    font-weight: 600;
-}
-
-.tab:hover:not(.tab-active) {
-    color: #63b3ed; /* Lighter blue on hover for inactive tabs */
 }
