@@ -1,40 +1,39 @@
 body {
     font-family: 'Inter', sans-serif;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.glass-effect {
+.class-effect {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    display: inline-block;
-    cursor: pointer;
 }
 
 .hidden {
     display: none;
 }
 
-/* Additional styles for active/inactive tabs */
-.tab {
-    padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-right: 5px;
-    user-select: none;
+.container {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.tab-active {
-    background-color: white;
-    color: black;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-bottom: none;
-    font-weight: 600;
+.form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.tab-inactive {
-    background-color: transparent;
-    color: white;
-    opacity: 0.7;
+.image-section {
+    flex: 1;
+    background: url('your-image.jpg') no-repeat center center/cover;
 }
