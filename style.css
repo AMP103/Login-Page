@@ -14,22 +14,20 @@ body {
     display: none;
 }
 
-/* Added styles to fix inconsistent active tab styling on login/sign up page */
+/* Added styles for active tab styling */
 .tab {
-    display: inline-block;
     padding: 10px 20px;
     cursor: pointer;
-    font-weight: 600;
-    color: #666;
     border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
+    transition: border-color 0.3s ease, color 0.3s ease;
 }
 
-.tab.active {
-    color: #000;
-    border-bottom: 2px solid #000;
+.tab-active {
+    border-bottom-color: #3182ce; /* Blue underline to indicate active tab */
+    color: #3182ce; /* Blue text for active tab */
+    font-weight: 600;
 }
 
-.tab:hover {
-    color: #000;
+.tab:hover:not(.tab-active) {
+    color: #63b3ed; /* Lighter blue on hover for inactive tabs */
 }
